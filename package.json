@@ -1,0 +1,24 @@
+{
+  "name": "holidays",
+  "version": "1.0.0",
+  "description": "French holidays library",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.mocha.js"
+  },
+  "keywords": [
+    "Holiday",
+    "sun",
+    "France"
+  ],
+  "author": "Quentin Lecomte",
+  "license": "MIT",
+  "dependencies": {
+    "easter": "file:../easter",
+    "moment": "^2.22.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-datetime": "^1.5.0"
+  }
+}
