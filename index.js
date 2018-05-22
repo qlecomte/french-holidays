@@ -60,13 +60,13 @@ function isHoliday(date){
 	}
 
 	// Ascension
-	// (Pâques + 40j)
+	// (Pâques + 39j)
 	if (moment(date).format("YYYY-MM-DD") === moment(easterDate).add(39, 'days').format("YYYY-MM-DD")){
 		return true;
 	}
 
 	// Pentecôte
-	// (Pâques + 50j)
+	// (Pâques + 49j)
 	if (moment(date).format("YYYY-MM-DD") === moment(easterDate).add(49, 'days').format("YYYY-MM-DD")){
 		return true;
 	}
@@ -81,4 +81,6 @@ function isHoliday(date){
 	return false;
 }
 
-module.exports = isHoliday;
+module.exports = {
+	isHoliday: isHoliday
+}
